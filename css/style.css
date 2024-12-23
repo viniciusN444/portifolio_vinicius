@@ -86,6 +86,188 @@ span{
     align-items: center;
 }
 
+.home-img{
+    border-right: solid 0.6rem var(--main-color);
+    border-bottom: solid 0.6rem var(--main-color);
+    border-image: linear-gradient(135deg,transparent 50%, var(--main-color)) 1;
+}
+
+.about-img{
+    border-left: solid 0.6rem var(--main-color);
+    border-bottom: solid 0.6rem var(--main-color);
+    border-image: linear-gradient(225deg,transparent 50%, var(--main-color)) 1;
+}
+
 .home-img img, .about-img img{
     width: 100%;
 }
+
+.about{
+    background-color: var(--bg-color-02);
+}
+
+.home-content, .about-content{
+    width: 45%;
+}
+
+.home-content h1, .about-content h1{
+    font-weight: 700;
+    line-height: 1.3;
+
+    font-size: 2.7rem;
+}
+
+.home-content h3, .about-content h3{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.home-content p, .about-content p{
+    margin: 1.2rem;
+    text-align: justify;
+}
+
+.services h2,
+.portifolio h2,
+.contact h2{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.services-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.services-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 25rem;
+    margin-bottom: 1rem;
+}
+
+.services-container, .services-box{
+    padding: 2rem 1rem 2.5rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: solid 0.15rem var(--bg-color-01);
+    background-color: var(--bg-color-02);
+    transition: 0.5s ease;
+}
+
+.services-container, .services-box:hover{
+    border-color: var(--main-color);
+    transition: scale(1.01);
+}
+
+.services-box i{
+    font-size: 4.3rem;
+    color: var(--main-color);
+}
+
+.services-box h3{
+    font-size: 1.5rem;
+}
+
+.services-box p{
+    margin: 0.5rem;
+    letter-spacing: 0.1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.portifolio{
+    background-color: var(--bg-color-02);
+}
+
+.portifolio-container{
+    display: grid;
+    gap: 1.2rem;
+}
+
+.portifolio-box{
+    position: relative;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 0.6rem var(--bg-color-01);
+    overflow: hidden;
+    display: flex;
+}
+
+.portifolio-box img{
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.portifolio-box img:hover{
+    transform: scale(1.1);
+}
+
+.portifolio-box .portifolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, var(--main-color));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(30rem);
+    transition: 0.5s ease;
+}
+
+.portifolio-box:hover .portifolio-layer{
+    transform: translateY(0);
+}
+
+.portifolio-layer h4{
+    font-size: 1.8rem;
+}
+
+.portifolio-layer p{
+    margin: 0.2rem 0 0.5rem;
+}
+
+.portifolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: linear-gradient(var(--text-color));
+    border-radius: 50%;
+}
+
+.portifolio-layer a i{
+    font-size: 1.2rem;
+    color: var(--bg-color-02);
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    color: var(--bg-color-02);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    padding-top: 1.2rem;
+}
+
+.btn:hover{
+    box-shadow: 0 0 0.3rem var(--main-color);
+    background-color: inherit;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
