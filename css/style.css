@@ -42,7 +42,7 @@ header{
     left: 0;
     width: 100%;
     padding: 1.1rem; /*Pega o valor baseado no tamanho da fonte padrão (font-size: 16px;) e ajusta conforme o padrão */
-    background-color: var(--bg-color01);
+    /* background-color: var(--bg-color01); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -473,9 +473,9 @@ footer{
         gap: 1.2rem;
     }
 
-    header{
+    /* header{
         background-color: var(--color04);
-    }
+    } */
 }
 
 @media (min-width: 1200px){
