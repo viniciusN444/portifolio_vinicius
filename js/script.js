@@ -1,16 +1,15 @@
-const menuHamburguer = window.document.querySelector('.menu-hamburger');
-menuHamburguer.addEventListener('click', () => {
-   toggleMenu();
-});
+// const menuHamburguer = window.document.querySelector('.menu-hamburger');
+// menuHamburguer.addEventListener('click', () => {
+//     toggleMenu();
+// });
 
-function toggleMenu(){
-    const nav = window.document.querySelector('.nav-responsive');
-    menuHamburguer.classList.toggle('change');
-    
-    // Alterna a visibilidade do menu
-    if(menuHamburguer.classList.contains('change')){
-        nav.style.display = 'flex'; // Altere de 'block' para 'flex' para garantir que os itens fiquem organizados verticalmente
-    }else{
-        nav.style.display = 'none';
-    }
-}
+// function toggleMenu(){
+//     const nav = window.document.querySelector('.nav-responsive');
+//     nav.classList.toggle('active'); 
+
+//     if(nav.classList.contains('active')){
+//         nav.style.display = 'flex'; // Exibe o menu
+//     } else {
+//         nav.style.display = 'none'; // Oculta o menu
+//     }
+// }
