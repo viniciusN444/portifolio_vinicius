@@ -1,15 +1,15 @@
-// const menuHamburguer = window.document.querySelector('.menu-hamburger');
-// menuHamburguer.addEventListener('click', () => {
-//     toggleMenu();
-// });
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
 
-// function toggleMenu(){
-//     const nav = window.document.querySelector('.nav-responsive');
-//     nav.classList.toggle('active'); 
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const telefone = document.getElementById('telefone').value;
+    const assunto = document.getElementById('assunto').value;
+    const mensagem = document.getElementById('mensagem').value;
 
-//     if(nav.classList.contains('active')){
-//         nav.style.display = 'flex'; // Exibe o menu
-//     } else {
-//         nav.style.display = 'none'; // Oculta o menu
-//     }
-// }
+    const texto = `Olá Vinícius, meu nome é ${nome}%0AEmail: ${email}%0ATelefone: ${telefone}%0AAssunto: ${assunto}%0AMensagem: ${mensagem}`;
+    const numeroWhatsApp = '5516997444062';
+    const url = `https://wa.me/${numeroWhatsApp}?text=${texto}`;
+
+    window.open(url, '_blank');
+});
