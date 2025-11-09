@@ -406,6 +406,16 @@ footer {
         font-size: 1.2rem;
         margin: 0.5rem 0;
     }
+
+    /* Oculta o restante do texto inicialmente */
+    .mais-texto {
+        display: none;
+    }
+
+    /* Quando ativo (mostrar o texto completo) */
+    .texto-ativo .mais-texto {
+        display: inline;
+    }
 }
 
 /* Menu hamburguer visível em telas pequenas */
@@ -449,6 +459,16 @@ footer {
 
     .home-content div {
         text-align: center;
+    }
+
+    /* Oculta o restante do texto inicialmente */
+    .mais-texto {
+        display: none;
+    }
+
+    /* Quando ativo (mostrar o texto completo) */
+    .texto-ativo .mais-texto {
+        display: inline;
     }
 }
 
@@ -497,6 +517,16 @@ footer {
         flex-direction: row;
         gap: 1.2rem;
     }
+
+    /* Oculta o restante do texto inicialmente */
+    .mais-texto {
+        display: none;
+    }
+
+    /* Quando ativo (mostrar o texto completo) */
+    .texto-ativo .mais-texto {
+        display: inline;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -510,6 +540,16 @@ footer {
 
     .portifolio-container {
         grid-template-columns: auto auto auto;
+    }
+
+    /* Oculta o restante do texto inicialmente */
+    .mais-texto {
+        display: none;
+    }
+
+    /* Quando ativo (mostrar o texto completo) */
+    .texto-ativo .mais-texto {
+        display: inline;
     }
 }
 
