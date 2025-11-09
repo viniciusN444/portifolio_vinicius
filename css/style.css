@@ -1,7 +1,7 @@
 /* Importando fonte do google fontes */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
+:root {
     --main-color: #00eeff;
     --text-color: #ffffff;
     --bg-color-01: #1f242d;
@@ -16,41 +16,44 @@
     --color04: #232323;
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
     outline: none;
-    scroll-behavior: smooth; /* Desliza na tela sozinho de uma maneira suave, levando para a seção clicada pelo usuario */
+    scroll-behavior: smooth;
+    /* Desliza na tela sozinho de uma maneira suave, levando para a seção clicada pelo usuario */
 }
 
-html{
+html {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
 
-body{
+body {
     background-color: var(--bg-color-01);
     color: var(--text-color);
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.1rem; /*Pega o valor baseado no tamanho da fonte padrão (font-size: 16px;) e ajusta conforme o padrão */
+    padding: 1.1rem;
+    /*Pega o valor baseado no tamanho da fonte padrão (font-size: 16px;) e ajusta conforme o padrão */
     /* background-color: var(--bg-color01); */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100; /*Deixar o header no topo de tudo, pois ele tem uma posição fixa */
+    z-index: 100;
+    /*Deixar o header no topo de tudo, pois ele tem uma posição fixa */
     /* border: 1px solid var(--color02); */
 }
 
-.logo{
+.logo {
     font-size: 1rem;
     color: var(--text-color);
     font-weight: 600;
@@ -64,18 +67,20 @@ header{
     padding: 1rem 0;
 }
 
-.nav a, .nav-responsive a{
+.nav a,
+.nav-responsive a {
     font-size: 1.2rem;
     color: var(--text-color);
     padding: 0.5rem;
     transition: 0.4s;
 }
 
-.nav a:hover, .nav-responsive a:hover{
+.nav a:hover,
+.nav-responsive a:hover {
     color: var(--main-color);
 }
 
-.nav-responsive a{
+.nav-responsive a {
     display: none;
     position: absolute;
     top: 100%;
@@ -85,80 +90,86 @@ header{
     background-color: var(--bg-color-01);
 }
 
-.nav a:hover{
+.nav a:hover {
     color: var(--main-color);
 }
 
-section{
+section {
     min-height: 100vh;
     padding: 6rem 6rem 6rem;
 }
 
-span{
+span {
     color: var(--main-color);
 }
 
-.home, .about{
+.home,
+.about {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.home-img{
+.home-img {
     border-right: solid 0.6rem var(--main-color);
     border-bottom: solid 0.6rem var(--main-color);
-    border-image: linear-gradient(135deg,transparent 50%, var(--main-color)) 1;
+    border-image: linear-gradient(135deg, transparent 50%, var(--main-color)) 1;
 }
 
-.about-img{
+.about-img {
     border-left: solid 0.6rem var(--main-color);
     border-bottom: solid 0.6rem var(--main-color);
-    border-image: linear-gradient(225deg,transparent 50%, var(--main-color)) 1;
+    border-image: linear-gradient(225deg, transparent 50%, var(--main-color)) 1;
 }
 
-.home-img img, .about-img img{
+.home-img img,
+.about-img img {
     width: 100%;
 }
 
-.about{
+.about {
     background-color: var(--bg-color-02);
 }
 
-.home-content, .about-content{
+.home-content,
+.about-content {
     width: 45%;
 }
 
-.home-content h1, .about-content h1{
+.home-content h1,
+.about-content h1 {
     font-weight: 700;
     line-height: 1.3;
 }
 
-.home-content h3, .about-content h3{
+.home-content h3,
+.about-content h3 {
     font-weight: 700;
     font-size: 1.6rem;
 }
 
-.home-content p, .about-content p{
+.home-content p,
+.about-content p {
     margin: 1.2rem;
     text-align: justify;
 }
 
 .services h2,
 .portifolio h2,
-.contact h2{
+.contact h2 {
     font-size: 2.2rem;
     margin-bottom: 1rem;
     text-align: center;
 }
 
-.services-container{
+.services-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.services-box{
+.services-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -166,7 +177,8 @@ span{
     margin-bottom: 1rem;
 }
 
-.services-container, .services-box{
+.services-container,
+.services-box {
     padding: 2rem 1rem 2.5rem;
     border-radius: 1.2rem;
     text-align: center;
@@ -175,21 +187,22 @@ span{
     transition: 0.5s ease;
 }
 
-.services-container, .services-box:hover{
+.services-container,
+.services-box:hover {
     border-color: var(--main-color);
     transition: scale(1.01);
 }
 
-.services-box i{
+.services-box i {
     font-size: 4.3rem;
     color: var(--main-color);
 }
 
-.services-box h3{
+.services-box h3 {
     font-size: 1.5rem;
 }
 
-.services-box p{
+.services-box p {
     margin: 0.5rem;
     letter-spacing: 0.1rem;
     display: -webkit-box;
@@ -199,16 +212,16 @@ span{
     text-overflow: ellipsis;
 }
 
-.portifolio{
+.portifolio {
     background-color: var(--bg-color-02);
 }
 
-.portifolio-container{
+.portifolio-container {
     display: grid;
     gap: 1.2rem;
 }
 
-.portifolio-box{
+.portifolio-box {
     position: relative;
     border-radius: 0.6rem;
     box-shadow: 0 0 0.6rem var(--bg-color-01);
@@ -216,21 +229,22 @@ span{
     display: flex;
 }
 
-.portifolio-box img{
+.portifolio-box img {
     width: 100%;
     transition: 0.5s ease;
 }
 
-.portifolio-box img:hover{
+.portifolio-box img:hover {
     transform: scale(1.1);
 }
 
-.txtProject, h4{
+.txtProject,
+h4 {
     color: white;
     font-weight: bold;
 }
 
-.portifolio-box .portifolio-layer{
+.portifolio-box .portifolio-layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -247,19 +261,19 @@ span{
     transition: 0.5s ease;
 }
 
-.portifolio-box:hover .portifolio-layer{
+.portifolio-box:hover .portifolio-layer {
     transform: translateY(0);
 }
 
-.portifolio-layer h4{
+.portifolio-layer h4 {
     font-size: 1.8rem;
 }
 
-.portifolio-layer p{
+.portifolio-layer p {
     margin: 0.2rem 0 0.5rem;
 }
 
-.portifolio-layer a{
+.portifolio-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -269,26 +283,26 @@ span{
     border-radius: 50%;
 }
 
-.portifolio-layer a i{
+.portifolio-layer a i {
     font-size: 1.2rem;
     color: var(--bg-color-02);
 }
 
-form{
+form {
     max-width: 45rem;
     margin: 0.5rem auto;
     text-align: center;
     margin-bottom: 2rem;
 }
 
-form .input-box{
+form .input-box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 form .input-box input,
-form textarea{
+form textarea {
     width: 100%;
     padding: 1rem;
     font-size: 1rem;
@@ -297,12 +311,12 @@ form textarea{
     margin: 0.4rem 0;
 }
 
-form textarea{
+form textarea {
     resize: none;
     color: white;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -311,17 +325,17 @@ footer{
     background-color: var(--bg-color-01);
 }
 
-.social-media img{
+.social-media img {
     width: 3.5rem;
 }
 
-.social-media a{
+.social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 2.5rem;
     background: transparent;
-    border:  solid 0.15rem var(--main-color);
+    border: solid 0.15rem var(--main-color);
     border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
@@ -329,14 +343,14 @@ footer{
     transition: 0.5s ease;
 }
 
-.social-media a:hover{
+.social-media a:hover {
     background-color: var(--bg-color-02);
     box-shadow: 0 0 0.3rem var(--main-color);
     color: var(--bg-color-02);
     box-shadow: 0 0 0.3rem;
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 0.7rem 1.8rem;
     background-color: var(--main-color);
@@ -348,19 +362,21 @@ footer{
     padding-top: 1.2rem;
 }
 
-.btn:hover{
+.btn:hover {
     box-shadow: 0 0 0.3rem var(--main-color);
     background-color: inherit;
     color: var(--main-color);
     cursor: pointer;
 }
 
-.menu-hamburguer{
+.menu-hamburguer {
     display: none;
     cursor: pointer;
 }
 
-.bar1, .bar2, .bar3{
+.bar1,
+.bar2,
+.bar3 {
     width: 2rem;
     height: 0.3rem;
     background-color: var(--text-color);
@@ -368,24 +384,24 @@ footer{
     transition: 0.3s ease;
 }
 
-.chenge .bar1{
+.chenge .bar1 {
     transform: translate(0, 0.65rem) rotate(-45deg);
 }
 
-.chenge .bar2{
+.chenge .bar2 {
     opacity: 0;
 }
 
-.chenge .bar3{
+.chenge .bar3 {
     transform: translate(0, -0.65rem) rotate(45deg);
 }
 
-@media (min-width: 0px){
-    .nav{
+@media (min-width: 0px) {
+    .nav {
         display: none;
     }
 
-    .nav-responsive{
+    .nav-responsive {
         display: block;
         font-size: 1.2rem;
         margin: 0.5rem 0;
@@ -398,21 +414,25 @@ footer{
         padding: 6rem 2.5rem;
     }
 
-    .home, .about {
+    .home,
+    .about {
         flex-direction: column;
         gap: 1.2rem;
     }
 
-    .home img, .about img {
+    .home img,
+    .about img {
         width: 80%;
         max-width: 80%;
     }
 
-    .home-content, .about-content {
+    .home-content,
+    .about-content {
         width: 100%;
     }
 
-    .home-content h1, .about-content h1 {
+    .home-content h1,
+    .about-content h1 {
         font-size: 2.2rem;
         font-weight: 700;
         line-height: 1.3;
@@ -446,12 +466,14 @@ footer{
         display: none;
     }
 
-    .home, .about {
+    .home,
+    .about {
         flex-direction: row;
         justify-content: space-evenly;
     }
 
-    .home-content, .about-content {
+    .home-content,
+    .about-content {
         width: 50%;
     }
 
@@ -470,23 +492,33 @@ footer{
     }
 }
 
-@media (min-width: 992px){
-    .services-container{
+@media (min-width: 992px) {
+    .services-container {
         flex-direction: row;
         gap: 1.2rem;
     }
 }
 
-@media (min-width: 1200px){
-    .home-content h1{
+@media (min-width: 1200px) {
+    .home-content h1 {
         font-size: 2.7rem;
     }
 
-    .home-content h3{
+    .home-content h3 {
         font-size: 2rem;
     }
 
-    .portifolio-container{
+    .portifolio-container {
         grid-template-columns: auto auto auto;
     }
+}
+
+/* Oculta o restante do texto inicialmente */
+.mais-texto {
+    display: none;
+}
+
+/* Quando ativo (mostrar o texto completo) */
+.texto-ativo .mais-texto {
+    display: inline;
 }
